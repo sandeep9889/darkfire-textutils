@@ -27,5 +27,6 @@ urlpatterns = [
         
         path("analyze/",views.analyze, name='analyze'),
         path("aboutus/",views.aboutus, name='aboutus'),
+        path("contactus/",views.contactus, name='contactus'),
 
 ]

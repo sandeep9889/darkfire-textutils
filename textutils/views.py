@@ -69,7 +69,13 @@ def analyze(request):
 
 def aboutus(request):
     print(request)
-    return render(request,'aboutus.html')    
+    return render(request,'aboutus.html')   
+
+
+
+def contactus(request):
+    print(request)
+    return render(request,'contactus.html')     
 
 
 #def analyze(request):
