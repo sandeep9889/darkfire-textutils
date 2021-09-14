@@ -37,7 +37,7 @@ def analyze(request):
     elif(fullcaps=='on'):
         #this is analyze capital letter
         analyzed=""
-        for char in djtext1:
+        for char in djtext1: #im adding this comment
             analyzed=analyzed + char.upper() #upper is func that is to be capitalized
         
         params = {'purpose': 'changed to upper case', 'analyzed_text':analyzed}
