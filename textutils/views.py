@@ -13,13 +13,13 @@ def home(request):
 
 def analyze(request):
     #get the text
-    djtext1=request.GET.get('text','default')
+    djtext1=request.POST.get('text','default')
     # cheak the cheackbox value
-    removepunc=request.GET.get('removepunc','off')
-    fullcaps=request.GET.get('fullcaps','off')
-    newlineremover=request.GET.get('newlineremover','off')
-    extraspaceremover=request.GET.get('extraspaceremover','off')
-    charcounter=request.GET.get('charcounter','off')
+    removepunc=request.POST.get('removepunc','off')
+    fullcaps=request.POST.get('fullcaps','off')
+    newlineremover=request.POST.get('newlineremover','off')
+    extraspaceremover=request.POST.get('extraspaceremover','off')
+    charcounter=request.POST.get('charcounter','off')
     #printing the text
     print(djtext1)
     print(removepunc)
