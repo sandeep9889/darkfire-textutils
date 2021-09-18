@@ -20,7 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-        path("home/",views.home, name='home'),
+        path("",views.home, name='home'),
         #here home means you write home on server to start home then 
         #views.home means go on views and cheak on home function and getv name = home
         
